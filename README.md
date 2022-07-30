@@ -10,7 +10,7 @@ This project make use of the [PixelLib](https://github.com/ayoolaolafenwa/PixelL
 
 | Original Image  | Segmented Image with Bounding Boxes |
 |-----------------|-------------------------------------|
-| ![image](./ade_test1.jpeg)   |          ![image](./ade_test1_segmented.jpeg)                            |
+| ![image](./read_me_images/ade_test1.jpeg)   |          ![image](./read_me_images/ade_test1%202.jpeg)                            |
 
   
 
@@ -22,7 +22,7 @@ This project make use of the [PixelLib](https://github.com/ayoolaolafenwa/PixelL
  
 | Original Image  | Blurred Image |
 |-----------------|-------------------------------------|
-| ![image](./sample.jpeg)   |          ![image](./blur_img.jpg)      
+| ![image](./read_me_images/sample.jpeg)   |          ![image](./read_me_images/blur_img.jpg)      
 
 
 ## Instance_Segmentation_Extract_Objects
@@ -32,12 +32,12 @@ This project make use of the [PixelLib](https://github.com/ayoolaolafenwa/PixelL
 
 | Original Image  | Detected Objects |
 |-----------------|------------------|
-|      ![image](./sample.jpeg)           |  ![image](./output.jpg)                   |
+|      ![image](./read_me_images/sample.jpeg)           |  ![image](./read_me_images/output.jpg)                   |
 
 
 __**Segmented Objects**__
 
- ![image](./segmented.png)  
+ ![image](./read_me_images/segmented.png)  
 
 - bottle1.jpg
 - chari1.jpg
