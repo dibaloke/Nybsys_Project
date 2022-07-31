@@ -68,7 +68,7 @@ __**Segmented Objects**__
 
 ![image](./read_me_images/masked.png)
 
-- Extracted Objects will be shown with the proper caption
+- Extracted Objects will be shown with the proper captions
 
 ![image](./read_me_images/extracted.png)
 

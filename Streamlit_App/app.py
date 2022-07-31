@@ -59,14 +59,38 @@ def main():
             lookup_table.append(
                 class_names[i]+str(class_count_dict[current_label])+'.jpg')
             class_count_dict[current_label] = class_count_dict[current_label]-1
+
+        # Show Extracted Objects
+
         st.subheader('Extracted Objects')
         for filename in os.listdir('./'):
             f = os.path.join('./', filename)
             # checking if it is a file
             if os.path.isfile(f) and filename != 'output.jpg' and filename != 'sample.jpeg' and filename.endswith('.jpg'):
                 extracted_objects = Image.open(filename)
-
                 st.image(extracted_objects, caption=filename.split('.')[0])
+
+        st.subheader('Blurring')
+
+        options_to_select = [element.split('.')[0] for element in lookup_table]
+
+        option = st.selectbox(
+            'Select the type of object you want to keep unblurred', tuple(options_to_select
+                                                                          ))
+        st.write('You selected:', option)
+
+        target_object = str(option)+'.jpg'
+        filt2 = (df['Class_id'] == segmask['class_ids']
+                 [lookup_table.index(target_object)])
+        detect_class = df.loc[filt2, 'Class_Name'].values[0]
+        change_bg = alter_bg(model_type="pb")
+        change_bg.load_pascalvoc_model("xception_pascalvoc.pb")
+        change_bg.blur_bg("sample.jpeg", low=True,
+                          output_image_name="blur_img.jpg", detect=detect_class)
+
+        blurred_image = Image.open('./blur_img.jpg')
+
+        st.image(blurred_image)
 
 
 if __name__ == '__main__':
