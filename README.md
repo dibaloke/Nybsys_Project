@@ -55,7 +55,7 @@ __**Segmented Objects**__
 
 ## Streamlit App
 - Download the pre-trained h5 file [here](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5)
-- Download Deeplabv3+ model trained on pascalvoc dataset [here] (https://github.com/ayoolaolafenwa/PixelLib/releases/download/1.1/xception_pascalvoc.pb)
+- Download Deeplabv3+ model trained on pascalvoc dataset [here](https://github.com/ayoolaolafenwa/PixelLib/releases/download/1.1/xception_pascalvoc.pb)
 - Run the following command `` streamlit run app.py ``
 - Upload or Drag and drop a "jpeg" image file 
 
