@@ -59,3 +59,26 @@ __**Segmented Objects**__
 - Upload or Drag and drop a "jpeg" image file 
 
 ![image](./read_me_images/upload.png)  
+
+- Original Image will be showed
+
+![image](./read_me_images/original.png)
+
+- Image with detected object which contains bounding box, detection confidence score and mask will be shown
+
+![image](./read_me_images/masked.png)
+
+- Extracted Objects will be shown with the proper caption
+
+![image](./read_me_images/extracted.png)
+
+
+- Select the object from dropdown
+
+![image](./read_me_images/dropdown.png)
+
+
+- The final output will be shown
+
+
+![image](./read_me_images/final.png)
