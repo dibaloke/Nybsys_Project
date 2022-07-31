@@ -66,7 +66,7 @@ def main():
         for filename in os.listdir('./'):
             f = os.path.join('./', filename)
             # checking if it is a file
-            if os.path.isfile(f) and filename != 'output.jpg' and filename != 'sample.jpeg' and filename.endswith('.jpg'):
+            if os.path.isfile(f) and filename != 'output.jpg' and filename != 'sample.jpeg' and filename != 'blur_img.jpg' and filename.endswith('.jpg'):
                 extracted_objects = Image.open(filename)
                 st.image(extracted_objects, caption=filename.split('.')[0])
 
