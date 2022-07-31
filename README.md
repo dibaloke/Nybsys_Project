@@ -1,6 +1,6 @@
 # Nybsys_Project
 
-This project make use of the [PixelLib](https://github.com/ayoolaolafenwa/PixelLib) Library to segment objects and blurr the background.
+This project make use of the [PixelLib](https://github.com/ayoolaolafenwa/PixelLib) Library to segment objects and blurr the background. [Streamlit](https://streamlit.io/) is used as a frontend GUI. 
 
 ## Instance Segmentation
 
@@ -52,3 +52,10 @@ __**Segmented Objects**__
 - person2.jpg
 - person3.jpg
 - person4.jpg
+
+## Streamlit App
+- Download the pre-trained h5 file [here](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5)
+- Run the following command `` streamlit run app.py ``
+- Upload or Drag and drop a "jpeg" image file 
+
+![image](./read_me_images/upload.png)  
